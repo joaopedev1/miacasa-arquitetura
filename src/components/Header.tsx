@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-24 px-4">
+      <div className="container mx-auto flex items-center justify-between h-28 px-4">
         <Link to="/" className="flex items-center" aria-label="Home">
           <h1 className="h-14 flex items-center">
             {/* Implementação semântica correta com texto escondido para SEO */}
@@ -28,7 +28,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="MIA CASA Logo" 
-              className="h-14 md:h-16 w-auto object-contain" 
+              className="h-20 md:h-24 w-auto object-contain" 
             />
           </h1>
         </Link>

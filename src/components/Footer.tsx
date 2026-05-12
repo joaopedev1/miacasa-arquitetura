@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="flex flex-col gap-6">
             <Link to="/" aria-label="MIA CASA Home">
-              <img src={logo} alt="MIA CASA Arquitetura Logo" className="h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+              <img src={logo} alt="MIA CASA Arquitetura Logo" className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
             </Link>
             <p className="text-secondary-foreground/60 text-sm leading-relaxed max-w-sm">
               Arquitetura e Construção — Projetos, administração, construção e interiores em Itupeva e região.
