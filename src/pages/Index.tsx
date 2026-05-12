@@ -244,7 +244,9 @@ const Index = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <p className="text-primary/80 text-xs uppercase tracking-widest mb-1">{item.status}</p>
+                    {item.status === "Concluído" && (
+                      <p className="text-primary/80 text-xs uppercase tracking-widest mb-1">{item.status}</p>
+                    )}
                     <h3 className="text-secondary-foreground font-heading text-xl font-semibold">{item.title}</h3>
                   </div>
                 </Link>

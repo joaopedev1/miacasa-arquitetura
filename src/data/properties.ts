@@ -10,10 +10,9 @@ export interface Property {
 // Helper to generate Google Drive direct image URL from file ID
 const gd = (id: string) => `https://lh3.googleusercontent.com/d/${id}=w1200`;
 
-export const properties: Property[] = [
-  {
+export const properties: Property[] = [  {
     id: "obra-1",
-    title: "Obra ADRIANA",
+    title: "Residencial",
     status: "Concluído",
     category: "Residencial",
     cover: gd("1wJrOWrZJrz4kt8EEJS44N70jNfnlrQ95"),
@@ -44,12 +43,12 @@ export const properties: Property[] = [
       gd("18k_vJJEG5pWBUkLBIyfh0e6DSxbkAkkj"),
       gd("12cK1292PRDRmXV0qO_VSCo5ZEfvImyIg"),
       gd("19_NeI1TIZo92JVN2g4rTMt0Mvf1auITe"),
-      gd("1z7Md24yE_gMR8nhuOXaE9egZvKM_4c7Y")
+      gd("1z7Md24yE_gMR8nhuOXaE9egZVKM_4c7Y")
     ]
   },
   {
     id: "obra-2",
-    title: "Obra ALMIR",
+    title: "Residencial",
     status: "Concluído",
     category: "Residencial",
     cover: gd("1Wuvo-ECuJOJpWn7Hqe8bbVj4YIYQD9mB"),
@@ -96,7 +95,7 @@ export const properties: Property[] = [
   },
   {
     id: "obra-7",
-    title: "Obra KAIO",
+    title: "Residencial",
     status: "Em andamento",
     category: "Residencial",
     cover: gd("1JOvfX-eO1Re5glPBdpsd473rn91wG_FO"),
@@ -110,7 +109,7 @@ export const properties: Property[] = [
   },
   {
     id: "obra-8",
-    title: "Obra MARCO ANTONIO",
+    title: "Residencial",
     status: "Concluído",
     category: "Residencial",
     cover: gd("1LpexBtGzJPEo4siCxXzBUNChTgFFHGao"),
@@ -158,7 +157,7 @@ export const properties: Property[] = [
   },
   {
     id: "obra-11",
-    title: "Obra VINICIUS",
+    title: "Residencial",
     status: "Em andamento",
     category: "Residencial",
     cover: gd("1l7hzYjJXmCp7A22kA3xH2m08YG2g-ZN_"),

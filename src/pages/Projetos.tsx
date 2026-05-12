@@ -5,9 +5,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { properties, Property } from "@/data/properties";
 
-type Category = "Todos" | "Residencial" | "Interiores" | "Concluído" | "Em andamento";
+type Category = "Todos" | "Residencial" | "Interiores" | "Concluído";
 
-const categories: Category[] = ["Todos", "Residencial", "Interiores", "Concluído", "Em andamento"];
+const categories: Category[] = ["Todos", "Residencial", "Interiores", "Concluído"];
 
 const Projetos = () => {
   const [filter, setFilter] = useState<Category>("Todos");
@@ -100,12 +100,14 @@ const Projetos = () => {
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex gap-2 mb-2">
                       <span className="text-primary/80 text-xs uppercase tracking-widest">{project.category}</span>
-                      <span className="text-secondary-foreground/40 text-xs">•</span>
-                      <span className={`text-xs uppercase tracking-widest ${
-                        project.status === "Em andamento" ? "text-yellow-400/80" : "text-green-400/80"
-                      }`}>
-                        {project.status}
-                      </span>
+                      {project.status === "Concluído" && (
+                        <>
+                          <span className="text-secondary-foreground/40 text-xs">•</span>
+                          <span className="text-xs uppercase tracking-widest text-green-400/80">
+                            {project.status}
+                          </span>
+                        </>
+                      )}
                     </div>
                     <h3 className="text-secondary-foreground font-heading text-xl font-semibold">{project.title}</h3>
                     <p className="text-secondary-foreground/50 text-xs mt-1">{project.images.length} fotos</p>
@@ -124,12 +126,14 @@ const Projetos = () => {
             <DialogTitle className="font-heading text-2xl mb-2">{selected?.title}</DialogTitle>
             <div className="flex gap-3 items-center">
               <span className="text-xs uppercase tracking-widest text-primary">{selected?.category}</span>
-              <span className="text-muted-foreground text-xs">•</span>
-              <span className={`text-xs uppercase tracking-widest ${
-                selected?.status === "Em andamento" ? "text-yellow-400" : "text-green-400"
-              }`}>
-                {selected?.status}
-              </span>
+              {selected?.status === "Concluído" && (
+                <>
+                  <span className="text-muted-foreground text-xs">•</span>
+                  <span className="text-xs uppercase tracking-widest text-green-400">
+                    {selected?.status}
+                  </span>
+                </>
+              )}
               <span className="text-muted-foreground text-xs">•</span>
               <span className="text-muted-foreground text-xs">{selected?.images.length} fotos</span>
             </div>
@@ -158,7 +162,7 @@ const Projetos = () => {
             </div>
             <div>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Projeto arquitetônico e acompanhamento de obra para {selected?.title.replace("Obra ", "")}.
+                Projeto arquitetônico e acompanhamento de obra.
               </p>
             </div>
           </div>

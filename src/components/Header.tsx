@@ -28,7 +28,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="MIA CASA Logo" 
-              className="h-10 md:h-12 w-auto object-contain" 
+              className="h-14 md:h-16 w-auto object-contain" 
             />
           </h1>
         </Link>
