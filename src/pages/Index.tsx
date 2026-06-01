@@ -90,7 +90,7 @@ const Index = () => {
           <div className="max-w-2xl">
             <ScrollReveal>
               <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4 font-medium">
-                Arquitetura & Execução
+                Arquitetura
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
