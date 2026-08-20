@@ -36,3 +36,6 @@ public/obras/FOTOS_OBRA/
 *.avi
 *.mkv
 
+
+# Cloudinary upload artifacts
+.cache/
