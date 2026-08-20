@@ -16,8 +16,8 @@ const Empresa = () => {
         {/* Institutional Photo Background (Placeholder) */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://lh3.googleusercontent.com/d/1E79HZJdknfw93uJvnU3e_ro3KE6KGh1M=w1200" 
-            alt="MIA CASA Institucional" 
+            src="https://res.cloudinary.com/sccu8xvd/image/upload/f_auto,q_auto:good,w_1920/miacasa/JORGE/Casa_02/DSC04096"
+            alt="MIA CASA Institucional"
             className="w-full h-full object-cover opacity-20 grayscale brightness-50"
           />
         </div>
@@ -38,8 +38,8 @@ const Empresa = () => {
             <ScrollReveal>
               <div className="aspect-[4/3] overflow-hidden border border-border">
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1wJrOWrZJrz4kt8EEJS44N70jNfnlrQ95=w1200" 
-                  alt="Escritório MIA CASA" 
+                  src="https://res.cloudinary.com/sccu8xvd/image/upload/f_auto,q_auto:good,w_1600/miacasa/ADRIANA/Casa_04/_filipemaker-107"
+                  alt="Escritório MIA CASA"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>

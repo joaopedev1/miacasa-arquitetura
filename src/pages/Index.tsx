@@ -182,8 +182,8 @@ const Index = () => {
             <ScrollReveal>
               <div className="aspect-[16/9] overflow-hidden border border-border">
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1E79HZJdknfw93uJvnU3e_ro3KE6KGh1M=w1200" 
-                  alt="MIA CASA Arquitetura" 
+                  src="https://res.cloudinary.com/sccu8xvd/image/upload/f_auto,q_auto:good,w_1600/miacasa/RAFAEL_RENATA/Casa_05/_filipemaker-116"
+                  alt="MIA CASA Arquitetura"
                   className="w-full h-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
                 />
               </div>
